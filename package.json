@@ -9,7 +9,7 @@
     "build": "tsc --declaration -d ",
     "upgrade-deps": "ncu -u && npm install",
     "postbuild": "npm run test",
-    "test": "./node_modules/.bin/mocha --timeouts=15000 --compilers ts:ts-node/register ./test/*.test.ts",
+    "test": "./node_modules/.bin/mocha --timeouts=15000 --require ts-node/register ./test/*.test.ts",
     "clean": "rimraf dist"
   },
   "repository": {
